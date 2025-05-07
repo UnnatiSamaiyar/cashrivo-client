@@ -85,7 +85,7 @@ const DayDeals = () => {
     };
 
     fetchDeals();
-  }, []);
+  }, [backendUrl]);
 
   return (
     <div className="w-full py-8 bg-white relative">
