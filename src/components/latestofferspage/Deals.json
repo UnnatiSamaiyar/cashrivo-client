@@ -1,0 +1,113 @@
+[
+    {
+      "id": "deal001",
+      "title": "Flat ₹200 OFF on First Order",
+      "description": "New users get ₹200 instant discount on a minimum purchase of ₹999 on Myntra.",
+      "store": "Myntra",
+      "code": "MYNTRA200",
+      "category": "Fashion",
+      "expiry": "2025-05-15",
+      "isExclusive": true,
+      "image": "myntra-offer.png"
+    },
+    {
+      "id": "deal002",
+      "title": "Up to 80% OFF + Extra 10% OFF on Electronics",
+      "description": "Grab massive discounts on electronics during the Flipkart Big Saving Days. Additional 10% off with ICICI Cards.",
+      "store": "Flipkart",
+      "code": "FLIPICICI10",
+      "category": "Electronics",
+      "expiry": "2025-05-10",
+      "isExclusive": false,
+      "image": "flipkart-electronics.png"
+    },
+    {
+      "id": "deal003",
+      "title": "Buy 1 Get 1 Free on All Pizzas",
+      "description": "Use this Domino's offer to get one free pizza on every purchase of a medium or large pizza.",
+      "store": "Domino's",
+      "code": "BOGOPIZZA",
+      "category": "Food",
+      "expiry": "2025-05-25",
+      "isExclusive": true,
+      "image": "dominos-bogo.png"
+    },
+    {
+      "id": "deal004",
+      "title": "₹100 Cashback on Mobile Recharge",
+      "description": "Recharge any prepaid mobile with a minimum of ₹249 and get ₹100 cashback via Paytm Wallet.",
+      "store": "Paytm",
+      "code": "RECHARGE100",
+      "category": "Recharge",
+      "expiry": "2025-04-30",
+      "isExclusive": false,
+      "image": "paytm-recharge.png"
+    },
+    {
+      "id": "deal005",
+      "title": "Flat ₹150 OFF on Medicines",
+      "description": "Get ₹150 off on your first order of ₹799 or more from PharmEasy.",
+      "store": "PharmEasy",
+      "code": "HEALTH150",
+      "category": "Health",
+      "expiry": "2025-05-20",
+      "isExclusive": true,
+      "image": "pharmeasy-offer.png"
+    },
+    {
+      "id": "deal006",
+      "title": "25% OFF on Beauty & Personal Care",
+      "description": "Limited-time offer on Nykaa - flat 25% off on top brands like L'Oreal, Lakmé & more.",
+      "store": "Nykaa",
+      "code": "NYKBEAUTY25",
+      "category": "Beauty",
+      "expiry": "2025-05-18",
+      "isExclusive": false,
+      "image": "nykaa-beauty.png"
+    },
+    {
+      "id": "deal007",
+      "title": "Free 1-Month Subscription",
+      "description": "Get a free 1-month Amazon Prime membership for new users with this exclusive link.",
+      "store": "Amazon",
+      "code": "",
+      "category": "Subscription",
+      "expiry": "2025-06-01",
+      "isExclusive": true,
+      "image": "amazon-prime.png"
+    },
+    {
+      "id": "deal008",
+      "title": "₹250 Cashback on Booking 2 Movie Tickets",
+      "description": "Book 2 movie tickets on BookMyShow and get ₹250 cashback using RBL credit cards.",
+      "store": "BookMyShow",
+      "code": "RBLMOVIE250",
+      "category": "Entertainment",
+      "expiry": "2025-05-12",
+      "isExclusive": false,
+      "image": "bms-cashback.png"
+    },
+    {
+      "id": "deal009",
+      "title": "10% OFF on Groceries via Blinkit",
+      "description": "Use this coupon to get 10% off on your next grocery order from Blinkit. No minimum order.",
+      "store": "Blinkit",
+      "code": "BLINKSAVE10",
+      "category": "Grocery",
+      "expiry": "2025-04-28",
+      "isExclusive": false,
+      "image": "blinkit-grocery.png"
+    },
+    {
+      "id": "deal010",
+      "title": "₹500 OFF on Domestic Flights",
+      "description": "SpiceJet offers ₹500 off on domestic flight bookings via the app. Use this limited-time promo.",
+      "store": "SpiceJet",
+      "code": "FLY500",
+      "category": "Travel",
+      "expiry": "2025-05-07",
+      "isExclusive": true,
+      "image": "spicejet-flight.png"
+    }
+  ]
+  
