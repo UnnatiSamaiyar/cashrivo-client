@@ -18,7 +18,8 @@ const Navbar = () => {
   const [stores, setStores] = useState<string[]>([]);
   const [categories, setCategories] = useState<string[]>([]);
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const [deals, setDeals] = useState<Deal[]>([]);
+  const [_deals, setDeals] = useState<Deal[]>([]);
+
 
   const [showCategories, setShowCategories] = useState(false);
   const [showStores, setShowStores] = useState(false);
@@ -33,7 +34,7 @@ const Navbar = () => {
         setDeals(data);
 
         const uniqueCategories = Array.from(new Set(data.map((deal: Deal) => deal.category))) as string[];
-const uniqueStores = Array.from(new Set(data.map((deal: Deal) => deal.storeName))) as string[];
+        const uniqueStores = Array.from(new Set(data.map((deal: Deal) => deal.storeName))) as string[];
 
 
 
@@ -45,7 +46,7 @@ const uniqueStores = Array.from(new Set(data.map((deal: Deal) => deal.storeName)
     };
 
     fetchCoupons();
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const user = localStorage.getItem("cashrivo_user");

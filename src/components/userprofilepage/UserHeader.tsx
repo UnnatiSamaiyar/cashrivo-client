@@ -22,7 +22,6 @@ const UserHeader = () => {
   const [formData, setFormData] = useState<Partial<User>>({});
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState('');
-  const navigate = useNavigate();
   const backendUrl = import.meta.env.VITE_BACKEND_URL;
 
   useEffect(() => {

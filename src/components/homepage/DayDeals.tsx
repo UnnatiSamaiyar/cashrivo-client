@@ -25,7 +25,7 @@ const DayDeals = () => {
   const sliderRef = useRef<HTMLDivElement>(null);
   const cardsRef = useRef<Array<HTMLDivElement | null>>([]);
   const [cashbackItems, setCashbackItems] = useState<CouponItem[]>([]);
-  const [loading, setLoading] = useState<boolean>(true);
+  const [_loading, setLoading] = useState<boolean>(true);
   const backendUrl = import.meta.env.VITE_BACKEND_URL;
 
   useEffect(() => {
