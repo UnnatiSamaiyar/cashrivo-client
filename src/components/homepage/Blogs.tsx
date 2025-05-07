@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 interface Blog {
+  _id: string;
   id: number;
   title: string;
   author: string;

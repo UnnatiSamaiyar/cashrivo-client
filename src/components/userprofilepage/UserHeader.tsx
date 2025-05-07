@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
@@ -21,6 +23,7 @@ const UserHeader = () => {
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState('');
   const navigate = useNavigate();
+  const backendUrl = import.meta.env.VITE_BACKEND_URL;
 
   useEffect(() => {
     const storedUser = localStorage.getItem('cashrivo_user');
@@ -42,7 +45,7 @@ const UserHeader = () => {
     setLoading(true);
     try {
       const res = await axios.put(
-        `http://localhost:5000/api/auth/users/${user._id}`,
+        `${backendUrl}/api/auth/users/${user._id}`,
         formData
       );
 

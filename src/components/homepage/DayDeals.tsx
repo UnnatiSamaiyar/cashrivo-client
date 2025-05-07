@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { useEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -62,6 +63,7 @@ const DayDeals = () => {
         console.log(response.data);
 
         // Access the correct path for the coupons data
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         const items = response.data.map((deal: any) => ({
           logo: deal.storeLogo, // Logo of the store
           brand: deal.storeName, // Store name as brand
@@ -107,7 +109,10 @@ const DayDeals = () => {
             {cashbackItems.map((item, index) => (
               <div
                 key={index}
-                ref={(el) => (cardsRef.current[index] = el)}
+                ref={(el) => {
+                  cardsRef.current[index] = el;
+                }}
+                
                 className="min-w-[70vw] sm:min-w-[40vw] md:min-w-[280px] max-w-[300px] bg-gradient-to-br from-blue-100 to-blue-300 rounded-xl shadow-md p-4 flex flex-col justify-between relative"
               >
                 <img

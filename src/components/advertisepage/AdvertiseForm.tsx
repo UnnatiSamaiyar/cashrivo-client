@@ -18,7 +18,7 @@ const AdvertiseForm = () => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
     };
 
-    const handleSubmit = async (e) => {
+    const handleSubmit = async (e: { preventDefault: () => void; }) => {
         e.preventDefault();
         try {
           const res = await fetch('http://localhost:5000/api/advertisement', {

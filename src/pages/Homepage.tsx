@@ -8,7 +8,6 @@ import TrendingCoupons from '../components/homepage/TrendingCoupons'
 import Blogs from '../components/homepage/Blogs'
 import Extension from '../components/homepage/Extension'
 import Newsletter from '../components/homepage/Newsletter'
-import Articles from '../components/homepage/Articles'
 import ReferBanner from '../components/homepage/ReferBanner'
 import ExclusiveMerchants from '../components/homepage/ExclusiveMerchants'
 
