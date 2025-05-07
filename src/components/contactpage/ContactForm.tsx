@@ -3,6 +3,7 @@ import { useState } from "react";
 import { toast } from "sonner";
 
 const ContactForm = () => {
+  const backendUrl = import.meta.env.VITE_BACKEND_URL;
   const [formData, setFormData] = useState({
     name: '',
     company: '',
@@ -22,7 +23,7 @@ const ContactForm = () => {
   const handleSubmit = async (e: { preventDefault: () => void; }) => {
     e.preventDefault();
     try {
-      const res = await fetch('http://localhost:5000/api/contact', {
+      const res = await fetch(`${backendUrl}/api/contact`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData)

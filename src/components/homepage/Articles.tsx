@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { useEffect, useState } from 'react';
 import cardImg from '../../assets/article.png'; // Fallback image
 import { FaClock } from 'react-icons/fa';

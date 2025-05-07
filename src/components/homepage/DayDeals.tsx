@@ -60,7 +60,7 @@ const DayDeals = () => {
     const fetchDeals = async () => {
       try {
         const response = await axios.get(`${backendUrl}/api/get-coupons`);
-        console.log(response.data);
+        
 
         // Access the correct path for the coupons data
         // eslint-disable-next-line @typescript-eslint/no-explicit-any

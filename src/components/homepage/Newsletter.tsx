@@ -4,6 +4,7 @@ import bgImg from '../../assets/newsletter-banner.png'; // Adjust path if needed
 import { toast } from 'sonner';
 
 const Newsletter = () => {
+  const backendUrl = import.meta.env.VITE_BACKEND_URL;
   const [formData, setFormData] = useState({
    
       email: '',
@@ -20,7 +21,7 @@ const Newsletter = () => {
     const handleSubmit = async (e: { preventDefault: () => void; }) => {
       e.preventDefault();
       try {
-        const res = await fetch('http://localhost:5000/api/newsletter', {
+        const res = await fetch( `${backendUrl}/api/newsletter`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(formData)

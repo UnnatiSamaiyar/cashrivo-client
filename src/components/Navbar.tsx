@@ -73,7 +73,7 @@ const Navbar = () => {
           {/* Nav Items */}
           <div className="absolute left-1/2 transform -translate-x-1/2 hidden md:flex space-x-6 font-medium">
             <div className="relative group z-999">
-              <span className="text-[#27548A] hover:text-[#FBBF24] transition cursor-pointer">
+              <span className="text-[#27348A] font-bold hover:text-[#FBBF24] transition cursor-pointer">
                 Top Categories
               </span>
               <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 w-48 bg-white border border-gray-200 rounded-xl shadow-lg opacity-0 group-hover:opacity-100 group-hover:visible invisible transition-all duration-300 z-auto">
@@ -95,7 +95,7 @@ const Navbar = () => {
               </div>
             </div>
             <div className="relative group z-999">
-              <span className="text-[#27548A] hover:text-[#FBBF24] transition cursor-pointer">
+              <span className="text-[#27348A] font-bold hover:text-[#FBBF24] transition cursor-pointer">
                 Top Stores
               </span>
               <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 w-48 bg-white border border-gray-200 rounded-xl shadow-lg opacity-0 group-hover:opacity-100 group-hover:visible invisible transition-all duration-300 z-auto">
@@ -114,8 +114,8 @@ const Navbar = () => {
                 </ul>
               </div>
             </div>
-            <a href="/latest-offers" className="text-[#27548A] hover:text-[#FBBF24] transition">Latest Offers</a>
-            <a href="/blogs" className="text-[#27548A] hover:text-[#FBBF24] transition">Blogs</a>
+            <a href="/latest-offers" className="text-[#27348A] font-bold hover:text-[#FBBF24] transition">Latest Offers</a>
+            <a href="/blogs" className="text-[#27348A] font-bold hover:text-[#FBBF24] transition">Blogs</a>
           </div>
 
           {/* Right Icons & Search */}

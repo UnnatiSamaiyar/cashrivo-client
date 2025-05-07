@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { useState, useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import axios from "axios"; // axios for API requests
