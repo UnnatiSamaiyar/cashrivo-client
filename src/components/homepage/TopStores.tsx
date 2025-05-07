@@ -15,11 +15,12 @@ const TopStores = () => {
   // Explicitly define cashbackItems state as an array of CashbackItem
   const [cashbackItems, setCashbackItems] = useState<CashbackItem[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
+  const backendUrl = import.meta.env.VITE_BACKEND_URL;
 
   useEffect(() => {
     const fetchDeals = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/vcommission');
+        const response = await axios.get(`${backendUrl}/api/vcommission`);
         console.log(response.data);
 
         // Access the correct path for the campaigns array
