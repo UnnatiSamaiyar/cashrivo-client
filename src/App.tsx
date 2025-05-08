@@ -41,7 +41,7 @@ function App() {
         <Route path="/latest-offers" element={<LatestOffersPage />} />
         <Route path="/deal/:id" element={<DealDetail />} />
         <Route path="/categories/:category" element={<CategoryPage />} />
-        <Route path="/stores/:store" element={<Stores />} />
+        <Route path="/stores/:storeName" element={<Stores />} />
       </Routes>
       <Footer />
     </div>

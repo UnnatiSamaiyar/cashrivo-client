@@ -28,7 +28,7 @@ const DealDetail = () => {
     const fetchCoupon = async () => {
       try {
         const res = await fetch(`${backendUrl}/api/get-coupon/${id}`);
-        if (!res.ok) throw new Error("Failed to fetch blog");
+        if (!res.ok) throw new Error("Error Occured!");
 
         const data = await res.json();
         setCoupon(data);
